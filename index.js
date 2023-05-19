@@ -1,3 +1,7 @@
+
+const form = document.getElementById('form1');
+
+
 const nameInput = document.getElementById('name');
 const button = document.getElementById('button-blue');
 let name = nameInput.value;
@@ -7,4 +11,4 @@ const sendComment = (name, url = 'https://yandex.ru/images/search?img_url=https%
     console.log(url);
 };
 
-button.onclick = sendComment;
+form.onsubmit = sendComment;
