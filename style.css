@@ -91,7 +91,7 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat
 	background-repeat: no-repeat;
 }
 
-#comment{
+#comment, .comment{
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
@@ -102,6 +102,10 @@ textarea {
     height: 150px;
     line-height: 150%;
     resize: vertical;
+}
+
+.comment {
+	border-bottom: 2px dotted #0493bd;
 }
 
 input:hover, textarea:hover,
