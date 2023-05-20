@@ -62,14 +62,13 @@ form.addEventListener('submit', (e) => {
     const comment = formData.get('comment'); 
     const comments = document.getElementById('comments');
 
-    //Its an edited name
     const editedName = editName(name);
     const censoredComment = censor(comment);
     const newCommentHTML = createHTML(editedName, url, censoredComment);
+
     const divForComment = document.createElement('div');
     divForComment.innerHTML = newCommentHTML;
 
     comments.prepend(divForComment);
-    console.log(comments.innerHTML);
 
 });
