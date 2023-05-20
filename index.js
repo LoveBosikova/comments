@@ -33,7 +33,7 @@ const createHTML = (userName, link, text) => {
     const htmlElements = [];
     htmlElements.push('<div class="comment">');
 
-    let srcSrtring = `<img src="${link}" alt="userLogo">`;
+    let srcSrtring = `<img class="userphoto" src="${link}" alt="userLogo">`;
     htmlElements.push(srcSrtring);
     htmlElements.push(`<div class="text">`)
     let userNameString = `<strong class='userHeader'>${userName}</p>`;
@@ -46,7 +46,7 @@ const createHTML = (userName, link, text) => {
 };
 //структура комментария
 // <div class="comment"> есть в массиве
-//   <img src="" alt="userLogo"> есть
+//   <img class="userphoto" src="" alt="userLogo"> есть
 //   <div class="text"> есть 
 //     <strong class='userHeader'></p>усть 
 //     <p class='comment-content'></p>tcnm

@@ -87,7 +87,7 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat
 
 #email:focus{
 	background-size: 30px 30px;
-  background-position: 11px 8px;
+	background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
@@ -104,13 +104,32 @@ textarea {
     resize: vertical;
 }
 
-.comment {
-	border-bottom: 2px dotted #0493bd;
+.header {
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	color:white;
+	font-size:24px;
+    font-weight:700;
+	text-align: center;
+	margin-top: 2rem;
 }
 
 input:hover, textarea:hover,
 input:focus, textarea:focus {
 	background-color:white;
+}
+
+.comment {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: 1fr;
+	gap: 10px;
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	font-size:24px;
+	border-bottom: 2px dotted #0493bd;
+}
+
+.userphoto {
+	width: 100px;
 }
 
 #button-blue{
