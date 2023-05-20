@@ -11,6 +11,7 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat
 
 #form-main{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	margin-left: auto;
 	margin-right: auto;
@@ -29,6 +30,8 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat
 	width: 45%;
 	display: block;
 	margin-top:30px;
+	margin-left: 10px;
+	margin-right: 10px;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
 }
@@ -36,7 +39,7 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat
 .feedback-input {
 	color:#3c3c3c;
 	font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
+    font-weight:500;
 	font-size: 18px;
 	border-radius: 0;
 	line-height: 22px;
@@ -185,3 +188,9 @@ input:focus, textarea:focus {
 		padding-right: 3%;
 	}
 }
+
+/* @media (max-width: 870px) {
+	#form-main {
+		flex-direction: column;
+	}
+} */
