@@ -3,6 +3,8 @@
 html{    background:url(http://thekitemap.com/images/feedback-img.jpg) repeat;
   background-size: cover;
   height:100%;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  color: #fff;
 }
 
 #feedback-page{
@@ -23,7 +25,6 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) repeat;
 	background-color:rgba(72,72,72,0.4);
 	padding-left:35px;
 	padding-right:35px;
-	padding-top:35px;
 	padding-bottom:50px;
 	max-width: 450px;
 	min-width: 350px;
@@ -66,6 +67,12 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) repeat;
 .focused{
 	color:#30aed6;
 	border:#30aed6 solid 3px;
+}
+
+.nameoptions {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 1rem;
 }
 
 /* Icons ---------------------------------- */
@@ -123,9 +130,10 @@ input:focus, textarea:focus {
 
 .comment {
 	display: grid;
-	grid-template-columns: 1fr 3fr;
-	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	gap: 10px;
+	align-items: center;
 	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	font-size:24px;
 	border-bottom: 2px dotted #0493bd;
@@ -133,6 +141,11 @@ input:focus, textarea:focus {
 
 .userphoto {
 	width: 100px;
+}
+
+.comment-content {
+	grid-column: 1 / -1;
+	grid-row: 2 / 3;
 }
 
 #button-blue{
@@ -188,9 +201,3 @@ input:focus, textarea:focus {
 		padding-right: 3%;
 	}
 }
-
-/* @media (max-width: 870px) {
-	#form-main {
-		flex-direction: column;
-	}
-} */
